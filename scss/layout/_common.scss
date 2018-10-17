@@ -83,11 +83,7 @@ nav{
 
 .carousel-1{
     z-index: 99999;
-
     margin: -1% 0 0 0;
-    .carousel-indicators{
-
-    }
     .carousel-inner{
         .item{
             background: black;
@@ -160,6 +156,9 @@ nav{
 
 .artists{
     display: flex;
+    @include media ("<=992px"){
+        margin: 0 0 5% 0;
+    }
     div{
         padding: 15px 0 15px 0;
         margin: 0 15px 0 15px;
@@ -187,10 +186,7 @@ nav{
         max-height: 480px;
         height: auto;
         @include media ("<=992px"){
-            width: 50%;
-        }
-        @include media ("<=391px"){
-            width: 30%;
+            display: none;
         }
     }
 }
@@ -432,7 +428,7 @@ nav{
 
 .contact{
     display: flex;
-    padding: 0 0 15% 0;
+    padding: 0 0 10% 0;
     div{
         padding: 3% 0 3% 0;
         margin: 0 3% 0 3%;
@@ -462,11 +458,8 @@ nav{
         max-width: 570px;
         max-height: 480px;
         height: auto;
-        @include media ("<=1199px"){
-            width: 50%;
-        }
-        @include media ("<=419px"){
-            width: 30%;
+        @include media ("<=992px"){
+            display: none;
         }
     }
 }
