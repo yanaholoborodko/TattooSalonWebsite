@@ -23,6 +23,6 @@
     "load-grunt-tasks": "3.5.2"
   },
   "dependencies": {
-    "handlebars": "^4.0.12"
+    "handlebars": ">=4.3.0"
   }
 }
